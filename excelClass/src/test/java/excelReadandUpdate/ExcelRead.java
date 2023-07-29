@@ -33,7 +33,7 @@ public class ExcelRead {
 		Workbook wb = new XSSFWorkbook(fis);
 		Sheet sheet=wb.getSheet("AiiTE FT Dec Batch 1");
 		int rowCount = sheet.getPhysicalNumberOfRows();
-		
+		//Excel looping
 		for (int i = 0; i <rowCount; i++) {
 			Row row = sheet.getRow(i);
 			int cellCount = row.getPhysicalNumberOfCells();
